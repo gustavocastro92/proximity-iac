@@ -1,15 +1,15 @@
 dynamodb = {
     
-    name = "proximity-clients",
+    name = "proximity-customers",
     billing_mode = "PROVISIONED",
     read_capacity = "2",
     write_capacity = "2",
 
     attribute = {
-        name = "clientId",
+        name = "customerId",
         type = "S"
     }
 
-    hash_key = "clientId"
+    hash_key = "customerId"
 
 }
