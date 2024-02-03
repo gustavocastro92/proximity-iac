@@ -1,5 +1,5 @@
 resource "aws_iam_policy" "main" {
-  name        = "ms-backend"
+  name        = "dev-ms-backend"
   path        = "/"
 
   # Terraform's "jsonencode" function converts a

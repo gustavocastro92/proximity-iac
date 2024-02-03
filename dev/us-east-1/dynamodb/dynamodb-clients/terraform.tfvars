@@ -1,6 +1,6 @@
 dynamodb = {
     
-    name = "proximity-customers",
+    name = "dev-proximity-customers",
     billing_mode = "PROVISIONED",
     read_capacity = "2",
     write_capacity = "2",

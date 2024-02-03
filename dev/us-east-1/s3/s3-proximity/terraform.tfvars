@@ -1,5 +1,5 @@
 s3 = {
     
-    name = "proximity-resources"
+    name = "dev-proximity-resources"
 
 }
