@@ -1,12 +1,22 @@
-resource "aws_iam_policy" "main" {
+resource "aws_iam_role" "main" {
   name        = "dev-ms-backend"
   path        = "/"
 
   # Terraform's "jsonencode" function converts a
   # Terraform expression result to valid JSON syntax.
-  policy = jsonencode({
+  assume_role_policy  = jsonencode({
   "Version": "2012-10-17",
   "Statement": [
+    {
+      "Sid": "Stmt17069149542123",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": [
+          "ec2.amazonaws.com"
+        ]
+      },
+      "Action": "sts:AssumeRole"
+    },
     {
       "Sid": "Stmt1706914954259",
       "Action": [
